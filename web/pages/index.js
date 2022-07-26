@@ -1,11 +1,12 @@
 import Link from "next/link";
 import { client } from "../lib/sanity/client";
 import { homeQuery } from "../lib/sanity/homeQuery";
+
 export default function Home({ posts }) {
   return (
     <div>
       <main>
-        <h1>My Blog</h1>
+      <h1>My Blog and <Link href="/merch"><a>Merch Store</a></Link></h1>
         <hr />
         <ul>
           {posts.map((p) => (
@@ -21,7 +22,7 @@ export default function Home({ posts }) {
   );
 }
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps({ }) {
   const posts = await client.fetch(homeQuery);
 
   return {

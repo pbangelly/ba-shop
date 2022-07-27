@@ -10,7 +10,9 @@ import { merchQuery } from "../lib/sanity/merchQuery";
 const Merch = ({ products }) => {
   return (
     <main>
-      <h1 class="text-red-500 text-2xl md:text-6xl text-center py-20">Your Bad Angel Store</h1>
+    <div class="h-40 bg-gradient-to-r from-violet-500 to-fuchsia-500">
+      <h1 class="text-pink-500 text-2xl md:text-6xl text-center py-20 ">Your Bad Angel Store</h1>
+    </div>
       <Cart>
         <Products products={products} />
         {/* <CartSummary /> */}

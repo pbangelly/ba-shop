@@ -2,13 +2,14 @@
 
 import { useShoppingCart, formatCurrencyString } from "use-shopping-cart";
 import urlFor from "../lib/sanity/urlFor";
+
 const Products = ({ products }) => {
   const { addItem, removeItem } = useShoppingCart();
   return (
-    <section class="py-20 px-10">
+    <section class="py-20 px-10 flex-wrap grid grid-cols-4 gap-5">
       {products.map((product) => (
         <div key={product.id}>
-          <img src={urlFor(product.image).width(200)} alt={product.name} />
+          <img src={urlFor(product.image).width(300)} alt={product.name} />
           <h2>{product.name}</h2>
           <p>
             {formatCurrencyString({
@@ -16,8 +17,8 @@ const Products = ({ products }) => {
               currency: "usd",
             })}
           </p>
-          <button onClick={() => addItem(product)}>Add to cart</button>
-          <button onClick={() => removeItem(product.id)}>Remove</button>
+          <button class="flex gap-1" onClick={() => addItem(product)}>Add to cart</button>
+          <button class="flex gap-1" onClick={() => removeItem(product.id)}>Remove</button>
         </div>
       ))}
     </section>

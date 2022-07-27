@@ -4,11 +4,11 @@ import { homeQuery } from "../lib/sanity/homeQuery";
 
 export default function Home({ posts }) {
   return (
-    <div class="container">
+    <div className="w-full">
       <main>
-      <h1>Your Bad Angel<Link href="/merch"><a>Blog and Shop</a></Link></h1>
+      <h1 className="bg-gradient-to-r from-indigo-600 to-fuchsia-400 text-2xl md:text-6xl text-center text-white py-10">Your Bad Angel<Link href="/merch"><a> Blog and Shop</a></Link></h1>
         <hr />
-        <ul>
+        <ul className="py-10 px-10 text-xl">
           {posts.map((p) => (
             <li key={p._id}>
               <Link href={`/posts/${p.slug}`}>

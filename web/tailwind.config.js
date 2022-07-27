@@ -7,7 +7,9 @@ module.exports = {
     container:{
       center: true,
     },
-    color:{
+    colors:{
+      white: colors.white,
+      indigo: colors.indigo,
       violet: colors.violet, 
       fuchsia: colors.fuchsia
 

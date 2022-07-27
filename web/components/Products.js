@@ -5,7 +5,7 @@ import urlFor from "../lib/sanity/urlFor";
 const Products = ({ products }) => {
   const { addItem, removeItem } = useShoppingCart();
   return (
-    <section>
+    <section class="py-20 px-10">
       {products.map((product) => (
         <div key={product.id}>
           <img src={urlFor(product.image).width(200)} alt={product.name} />

@@ -4,7 +4,7 @@ import { homeQuery } from "../lib/sanity/homeQuery";
 
 export default function Home({ posts }) {
   return (
-    <div>
+    <div class="container">
       <main>
       <h1>My Blog and <Link href="/merch"><a>Merch Store</a></Link></h1>
         <hr />

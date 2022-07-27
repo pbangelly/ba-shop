@@ -10,13 +10,13 @@ import { merchQuery } from "../lib/sanity/merchQuery";
 const Merch = ({ products }) => {
   return (
     <main>
-      <h1>My Merch Store</h1>
+      <h1 class="text-red-500 text-2xl md:text-6xl text-center py-20">Your Bad Angel Store</h1>
       <Cart>
         <Products products={products} />
         {/* <CartSummary /> */}
       </Cart>
       <Link href="/">
-        <a>Back Home</a>
+        <a class="text-red-500 py-10 px-10">Back Home</a>
       </Link>
     </main>
   );

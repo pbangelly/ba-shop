@@ -10,7 +10,7 @@ const Merch = ({ products }) => {
   return (
     <main>
     <div className="bg-gradient-to-r from-indigo-600 to-fuchsia-400">
-      <h1 className="text-white text-2xl md:text-6xl text-center py-10">Your Bad Angel Shop</h1>
+      <h1 className="text-white text-2xl md:text-6xl text-center py-10"><a href="/">Your Bad Angel Shop</a></h1>
     </div>
       <Cart>
         <Products products={products} />

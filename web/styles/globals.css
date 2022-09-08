@@ -7,3 +7,15 @@
   margin: 1%;
   padding: 1%;
 } */
+
+
+#banner{
+  /* position: fixed; */
+  /* display: block; */
+  /* object-fit: fill; */
+  /* background-image: url(../lib/images/banner.jpeg); */
+  background-image: url(../lib/images/badangel.png);
+  /* height: 50vh;
+  width: auto; */
+  /* background-repeat: no-repeat; */
+}

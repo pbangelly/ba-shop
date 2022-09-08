@@ -9,12 +9,17 @@ module.exports = {
     },
     colors:{
       white: colors.white,
+      red: colors.red,
       indigo: colors.indigo,
       violet: colors.violet, 
-      fuchsia: colors.fuchsia
+      fuchsia: colors.fuchsia,
 
     },
-    extend: {},
+    // extend: {
+    //   backgroundImage: {
+    //     'hero': "url('../lib/images/banner.jpeg')",
+    //   }
+    // },
   },
   variants: {
     extend: {},

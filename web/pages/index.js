@@ -4,11 +4,14 @@ import { homeQuery } from "../lib/sanity/homeQuery";
 
 export default function Home({ posts }) {
   return (
-    <div>
-      <main>
-      <h1 id="banner" className="bg-gradient-to-r from-indigo-600 to-fuchsia-400 text-2xl md:text-6xl text-center text-white py-10 w-full bg-fixed"> <a href="/">Your Bad Angel Blog</a><Link href="/merch"><a> and Shop</a></Link></h1>
-        <hr />
-        <ul className="py-10 px-10 text-xl">
+    <div className="container">
+      <main className="static">
+      {/* background image */}
+      <div id="banner" className="absolute bottom-0 left-0 right-0 top-0 z-0 bg-center bg-norepeat bg-cover py-10">
+      {/* title */}
+      <h1 className="top-0 right-0 left-0 bg-black text-red-500 text-2xl md:text-6xl text-center py-10 z-40"> <a href="/">Your Bad Angel Blog</a><Link href="/merch"><a> and Shop</a></Link></h1>
+        {/* cart */}
+        <ul className="absolute bottom-0 right-0 left-0 z-40 bg-black py-10 px-10 text-xl text-white">
           {posts.map((p) => (
             <li key={p._id}>
               <Link href={`/posts/${p.slug}`}>
@@ -17,6 +20,7 @@ export default function Home({ posts }) {
             </li>
           ))}
         </ul>
+      </div>
       </main>
     </div>
   );

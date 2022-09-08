@@ -1,13 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* button{
-  background: pink;
-  margin: 1%;
-  padding: 1%;
-} */
-
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni&display=swap');
 
 #banner{
   /* position: fixed; */
